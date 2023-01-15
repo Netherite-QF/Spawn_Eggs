@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "more_spawn_eggs",
+  "version": "${version}",
+  "name": "MoreSpawnEggs",
+  "description": "Add more spawn eggs to your game",
+  "authors": [
+    "Mao"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/more_spawn_eggs/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mao.morespawneggs.client.MoreSpawnEggsClient"
+    ],
+    "main": [
+      "com.mao.morespawneggs.MoreSpawnEggs"
+    ]
+  },
+  "mixins": [
+    "MoreSpawnEggs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
